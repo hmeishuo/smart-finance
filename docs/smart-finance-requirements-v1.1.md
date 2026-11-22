@@ -7,6 +7,7 @@
 - v1：初版。
 - v1.1：P1、P3、P4 的方向經使用者確認，改列為 D16～D18，並加入使用者補充的要求。詳細設計仍在任務 1-5 定案。
 - v1.1 補充（2026-11-14）：任務 1-1 驗收通過；P5 工具版本經使用者確認，改列為 D19。
+- v1.1 補充（2026-11-22）：任務 1-2 驗收通過；`.env.example` 改在任務 1-3、1-4 隨程式建立（見任務清單）。
 
 ---
 
@@ -60,9 +61,9 @@
 | 任務 | 內容 | 驗收標準 |
 |---|---|---|
 | 1-1 | Windows 開發環境確認（只檢查，不安裝） | 使用者回報各工具版本，決定要安裝或升級哪些工具 |
-| 1-2 | 本機專案目錄結構、.gitignore、.env.example、README；GitHub Repo 由使用者建立 | 可以 clone；沒有任何金鑰被提交 |
-| 1-3 | FastAPI 骨架：設定讀取環境變數、CORS、GET /health、pytest；依賴包含 tzdata | /health 回 200，pytest 通過（含 ZoneInfo("Asia/Taipei") 在 Windows 可載入的測試） |
-| 1-4 | React + Vite + TS + Tailwind 骨架：側邊欄與頁面空殼（標示尚未實作），RWD | npm run build 成功；手機和電腦版面都正常 |
+| 1-2 | 本機專案目錄結構、.gitignore、.gitattributes、README；GitHub Repo 由使用者建立（`.env.example` 改在 1-3、1-4 建立） | 可以 clone；沒有任何金鑰被提交 |
+| 1-3 | FastAPI 骨架：設定讀取環境變數、`backend/.env.example`、CORS、GET /health、pytest；依賴包含 tzdata | /health 回 200，pytest 通過（含 ZoneInfo("Asia/Taipei") 在 Windows 可載入的測試） |
+| 1-4 | React + Vite + TS + Tailwind 骨架：`frontend/.env.example`（只放 `VITE_` 公開設定）、側邊欄與頁面空殼（標示尚未實作），RWD | npm run build 成功；手機和電腦版面都正常 |
 | 1-5 | 設計文件（只寫文件）：概念 ERD、帳務模型（P2）、D16 退款詳細設計、時間處理、D17 權限詳細設計（含信任邊界） | 使用者審閱同意 |
 | 1-6 | 使用者依指引建立 Supabase 開發專案；設定 Alembic、後端連線，檢查資料庫角色屬性 | /health/db 正常；空 migration 可以套用及還原 |
 | 1-7 | 核心資料表 migration、RLS 政策、應用程式專用的資料庫角色、預設分類 | migration 可以套用及還原；限制條件（NUMERIC、外鍵、唯一鍵、CHECK、關聯歸屬一致性）有測試 |

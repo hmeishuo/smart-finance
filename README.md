@@ -51,5 +51,5 @@ SmartFinance/
 | 任務 | 內容 | 狀態 |
 |---|---|---|
 | 1-1 | Windows 開發環境確認 | ✅ 已驗收 |
-| 1-2 | 專案目錄結構、.gitignore、README、GitHub Repo | 進行中 |
+| 1-2 | 專案目錄結構、.gitignore、README、GitHub Repo | ✅ 已驗收 |
 | 1-3 ～ 1-10 | 見 [開發決策與修訂計畫](docs/smart-finance-requirements-v1.1.md) | 未開始 |
