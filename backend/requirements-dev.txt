@@ -1,0 +1,5 @@
+# Smart Finance 後端開發與測試依賴
+-r requirements.txt
+pytest==9.2.0
+# FastAPI TestClient 需要 httpx
+httpx==0.28.1

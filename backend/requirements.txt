@@ -1,0 +1,7 @@
+# Smart Finance 後端執行期依賴（只鎖定直接依賴）
+# 版本相容性已於 2026-11-22 查證支援 Python 3.14（決策 D19）。
+fastapi==0.165.0
+uvicorn==0.54.0
+pydantic-settings==2.16.3
+# Windows 沒有內建 IANA 時區資料庫，zoneinfo 需要 tzdata 才能載入 Asia/Taipei（決策 D18）
+tzdata==2026.6
