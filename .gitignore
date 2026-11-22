@@ -61,6 +61,9 @@ exports/
 *.log
 logs/
 
+# ---------- Claude Code 本機設定（含本機路徑） ----------
+.claude/launch.json
+
 # ---------- IDE ----------
 .vscode/*
 !.vscode/extensions.json
